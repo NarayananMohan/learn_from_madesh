@@ -13,6 +13,7 @@ var server = http.createServer(function (req, res) {
             console.log('Received message: ' + body);
         });
     }
+    
     res.writeHead(200);
     res.write(html);
     res.end();
